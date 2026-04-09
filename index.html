@@ -111,6 +111,7 @@ section{padding:100px 24px}
 .machine-card-body p{color:var(--text-muted);font-size:.92rem;line-height:1.6}
 .machine-tag{display:inline-block;font-size:.65rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;
   color:var(--gold);background:rgba(197,163,85,.1);padding:4px 12px;border-radius:20px;margin-bottom:12px}
+.machine-videos{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;padding:0 28px 24px}
 .gallery{background:var(--dark)}
 .gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
 .gallery-item{aspect-ratio:1;overflow:hidden;border-radius:6px;cursor:pointer;position:relative}
@@ -356,7 +357,12 @@ var stroje = [
     nazev:   "Lokomobila",
     stitek:  "Parní pohon",
     popis:   "Majestátní parní lokomobila v plné akci. Historický pohon, který změnil tvář českého zemědělství na přelomu 19. a 20. století.",
-    obrazek: "https://fimas-agrodily.weebly.com/uploads/1/4/1/4/14145328/pjf-1178-hdr-2_1.jpg"
+    obrazek: "https://fimas-agrodily.weebly.com/uploads/1/4/1/4/14145328/pjf-1178-hdr-2_1.jpg",
+    videa: [
+      { url: "https://youtu.be/nqT4dXGoi7w", nazev: "Lokomobila v akci" },
+      { url: "https://youtu.be/AwxA933U2e8", nazev: "Lokomobila — ukázka" },
+      { url: "https://youtu.be/KbwTZI_AzdU", nazev: "Lokomobila — detail" }
+    ]
   }
   // NOVÝ STROJ: zkopírujte blok výše, vložte sem a upravte údaje
 ];
@@ -477,14 +483,27 @@ var mc = document.getElementById("machine-cards");
 stroje.forEach(function(s) {
   var card = document.createElement("div");
   card.className = "machine-card";
-  card.onclick = function() { document.getElementById("galerie").scrollIntoView({ behavior: "smooth" }); };
-  card.innerHTML =
-    '<div class="machine-card-img"><img src="' + s.obrazek + '" alt="' + s.nazev + '"></div>' +
+  var hasVidea = s.videa && s.videa.length > 0;
+  var html =
+    '<div class="machine-card-img" onclick="document.getElementById(\'galerie\').scrollIntoView({behavior:\'smooth\'})"><img src="' + s.obrazek + '" alt="' + s.nazev + '"></div>' +
     '<div class="machine-card-body">' +
       '<div class="machine-tag">' + s.stitek + '</div>' +
       '<h3>' + s.nazev + '</h3>' +
       '<p>' + s.popis + '</p>' +
     '</div>';
+  if (hasVidea) {
+    html += '<div class="machine-videos">';
+    s.videa.forEach(function(vid) {
+      var vidId = vid.url.replace(/.*youtu\.be\//, "").replace(/.*[?&]v=/, "").replace(/[?&].*/, "");
+      var thumb = "https://img.youtube.com/vi/" + vidId + "/mqdefault.jpg";
+      html += '<a href="' + vid.url + '" target="_blank" class="tl-video-card" title="' + vid.nazev + '">' +
+        '<img src="' + thumb + '" alt="' + vid.nazev + '" loading="lazy">' +
+        '<div class="tl-video-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>' +
+        '<div class="tl-video-label">' + vid.nazev + '</div></a>';
+    });
+    html += '</div>';
+  }
+  card.innerHTML = html;
   mc.appendChild(card);
 });
 
