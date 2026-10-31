@@ -451,34 +451,245 @@ var galerie = [
 var W = "https://fimas-agrodily.weebly.com/uploads/1/4/1/4/14145328/";
 var vystavy = [
   {
+    rok: "2025", nazev: "Traktoriáda — III. ročník", datum: "7. 9. 2025", misto: "Meziboří",
+    fotky: [],
+    videa: [],
+    popis: '<p>Třetí ročník traktoriády pořádal pan Jiří Jurný na svých pozemcích. Akce se těšila velké účasti — sjelo se 65 traktorů a řada dalších exponátů, nechyběly předváděcí ukázky a dorazilo mnoho návštěvníků.</p>'
+  },
+  {
+    rok: "2025", nazev: "Krajské dožínky", datum: "6. 9. 2025", misto: "Jihlava — Havlíčkovo náměstí",
+    fotky: [],
+    videa: [],
+    popis: '<p>Krajské dožínky připadly na sobotu a přálo jim pěkné počasí. Naše místo bylo v horní části Havlíčkova náměstí, kde probíhal celý program. Kromě nás zde stálo jen několik moderních zemědělských strojů (dva kombajny Claas, velký pluh a obraceč píce), takže naše expozice byla nejpočetnější.</p>' +
+      '<h4>Vystavená technika</h4>' +
+      '<ul><li>Traktor Svoboda 15</li><li>Stabilní motor Slavia 8 HP</li><li>Povříslovačka s motorem Benz</li><li>Hrabicovka poháněná elektromotorem</li><li>Malý motor Lorenz 4–5 a panák pšenice (6 snopů)</li></ul>' +
+      '<p>Po celý den nabízely stánky řemeslné, potravinové a umělecké výrobky, na pódiu hrála hudba a probíhaly zábavné programy. Naši expozici navštívila i skupina z vedení kraje v čele s hejtmanem, která si sbírku se zájmem prohlédla. Dopravu jsme zajistili sami — firemním Jumperem s velkým přívěsem a druhým vozidlem s přívěsem.</p>' +
+      '<p class="tl-foto-credit">Účastníci: Marie a Josef Fickovi, Dáša, Aleš a Ondra Wasserbauerovi</p>'
+  },
+  {
+    rok: "2025", nazev: "Ostrovské dožínky", datum: "30. 8. 2025", misto: "Ostrov nad Oslavou",
+    fotky: [],
+    videa: [],
+    popis: '<p>Dožínky proběhly podobně jako před dvěma lety. Tentokrát jsme přivezli méně exponátů, zato s jednou novinkou: mlátičku „Galus“ poprvé poháněla naše parní lokomobila. Mlátily se snopy pšenice a naše traktory se zúčastnily slavnostního průvodu. Vše se povedlo a odjížděli jsme spokojeni.</p>' +
+      '<h4>Vystavená technika</h4>' +
+      '<ul><li>Traktory Zetor 3545, Zetor 7045, Svoboda 12 a Svoboda 15</li><li>Mlátička Bří Galusové a žebřinový vůz</li><li>Povříslovačka s motorem Benz</li><li>Stabilní motory Slavia 8 HP a malý Lorenz</li></ul>' +
+      '<p class="tl-foto-credit">Účastníci: Marie a Josef Fickovi, Dáša a Ondra Wasserbauerovi, Jan Homola, Petr Hamřík st. a ml., Martin Ptáček, Jiří Jakšič, Karel Vykydal</p>'
+  },
+  {
+    rok: "2025", nazev: "Pradědečkův traktor — X. ročník", datum: "19. 7. 2025", misto: "Doubravice u Pardubic",
+    fotky: [],
+    videa: [],
+    popis: '<p>Jubilejní desátý ročník setkání opět přilákal velké množství veteránů — hlavně stabilních motorů a traktorů, ale i pohonných jednotek spojených s nejrůznějšími pracovními stroji. Přivezli jsme malý motor Lorenz 4–5 a opravený traktor Svoboda 15.</p>' +
+      '<p class="tl-foto-credit">Účastníci: Josef Ficek, Marie Ficková, Jan Janeček</p>'
+  },
+  {
+    rok: "2025", nazev: "III. Veterán festival", datum: "21.–22. 6. 2025", misto: "Chlum – Brancouze u Třebíče",
+    fotky: [],
+    videa: [],
+    popis: '<p>Festival pořádají bratři Jan a Jiří Filovi. Rozsáhlá plocha byla zcela zaplněná traktory a stabilními motory různých značek a výkonů, některé pohonné jednotky byly zapojené do pracovních strojů a agregátů.</p>' +
+      '<h4>Naše exponáty</h4>' +
+      '<ul><li>Parní lokomobila Peerless s cirkulárkou Kovařík</li><li>Traktory Zetor 3545 a Svoboda 15</li><li>Povříslovačka a stabilní motory Benz, Lorenz 4–5 a Slavia 8</li></ul>' +
+      '<p>K přepravě posloužily Avia 75 a Jumper s vlekem.</p>' +
+      '<p class="tl-foto-credit">Účastníci: Marie a Josef Fickovi, Ondra Wasserbauer, Karel Vykydal, Jan Janeček</p>'
+  },
+  {
+    rok: "2024", nazev: "Traktoriáda — II. ročník", datum: "8. 9. 2024", misto: "Meziboří",
+    fotky: [],
+    videa: [],
+    popis: '<p>Druhý ročník traktoriády byl naší druhou a poslední akcí roku. Sjelo se 55 traktorů různých značek a výkonů, převážně Zetorů. Z naší strany se zúčastnily stabilní motory Benz a malý Lorenz 4–5.</p>' +
+      '<p class="tl-foto-credit">Účastníci: Marie a Josef Fickovi, Jan Homola</p>'
+  },
+  {
+    rok: "2024", nazev: "V. výstava stabilních motorů a staré techniky", datum: "22. 6. 2024", misto: "Ločenice",
+    fotky: [],
+    videa: [],
+    popis: '<p>Ločenice leží v jižních Čechách nedaleko Římovské přehrady na řece Malši, asi 185 km od nás. Výstavu pořádá obecní úřad v čele se starostou a veteránistou Petrem Janešem. Probíhala v sobotu odpoledne na prostorném náměstí, kde se lze pod stromy schovat před sluncem i deštěm. I tentokrát se sešla spousta zajímavých exponátů.</p>' +
+      '<p>Přivezli jsme povříslovačku a stabilní motory Benz, Slavia 8 a malý Lorenz 4–5.</p>' +
+      '<p class="tl-foto-credit">Účastníci: Marie a Josef Fickovi, Jan Homola, Jan Janeček</p>'
+  },
+  {
+    rok: "2023", nazev: "Traktoriáda — I. ročník", datum: "10. 9. 2023", misto: "Meziboří",
+    fotky: [],
+    videa: [],
+    popis: '<p>První traktoriádu uspořádal mladý veteránský nadšenec Jiří Jurný. Účast jsme slíbili už před několika lety, kvůli covidu se ale akce odsunula. V neděli jsme tedy vyrazili se dvěma stabilními motory a cestou přibrali Jendu Homolu.</p>' +
+      '<p>Meziboří je malá obec s necelými dvěma sty obyvateli, a o to víc nás překvapilo, kolik lidí se na přípravě podílelo — hasiči, zdravotníci, stánkaři, soukromí zemědělci i majitelé lesní techniky. Sešlo se přes 40 traktorů domácí výroby i velkých značek. Soutěžilo se v jízdě zručnosti, v závodech dvojic do táhlého kopce a na závěr na dráze s terénními a vodními překážkami. Program doplnila ukázka lesní techniky s odborným výkladem — kácení, odvětvování, štěpkování a zpracování palivového dřeva.</p>' +
+      '<p>Na první ročník byl program velmi dobře připravený, občerstvení z místních farem bohaté a obsluha vždy ochotná a usměvavá.</p>'
+  },
+  {
+    rok: "2023", nazev: "Dožínkové slavnosti", datum: "9. 9. 2023", misto: "Ostrov nad Oslavou",
+    fotky: [],
+    videa: [],
+    popis: '<p>Dožínky jsme plánovali od jara. Akci domlouval a z velké části zajišťoval Ing. Radomír Homola, syn našeho aktivního člena. Záštitu převzal úřad městyse, místní hasiči se starali o občerstvení po celé odpoledne i o večerní taneční zábavu.</p>' +
+      '<h4>Příprava</h4>' +
+      '<p>Pořadatelé si přáli co nejvíce exponátů, a tak nám předseda místního zemědělského družstva Ing. Ladislav Chrást ochotně zapůjčil velký přívěs na balíky slámy i s traktoristou a k nakládce poskytl vysokozdvižný vozík s řidičem. S nakládkou nám pomohli i synové Jana Homoly Radek a Mirek, vnuci Jenda a Jirka a jejich kamarád Petr Tulis.</p>' +
+      '<h4>Průvod</h4>' +
+      '<p>Průvod vyšel od místního kina v čele s hasičským vozem, za ním šli vlajkonoši, kapela, dva mladé páry s obilnými věnci a početná krojovaná chasa. Naši historickou techniku vedla Svoboda 12 s Jiřím Jakšičem za volantem, která táhla náš žebřiňák se snopy. Následovaly Svoboda 15, Zetor 25 K, Zetor 3545, Zetor 25 A pana R. Křesťana a dalších šest traktorů z obce a okolí. Před hasičskou zbrojnicí proběhlo poděkování za úrodu a žehnání.</p>' +
+      '<h4>Ukázky</h4>' +
+      '<p>Nejprve jsme předvedli výrobu slaměných povřísel na stroji se třemi vřeteny. Povříslovačka vyrábí pevná povřísla k opakovanému použití, hlavně na svazování obilí do snopů. Žitná sláma se předem namáčí ve vodě.</p>' +
+      '<p>Hlavní ukázkou bylo mlácení na mlátičce „Bří Galusové – Poštorná“. Mlátička se tak na jeden den vrátila domů do Ostrova, kde desítky let sloužila na hospodářství pana Homoly v č. p. 51. V roce 2016 ji jeho syn věnoval do naší sbírky a po doplnění řemenů a podávacího stolu, povrchové úpravě a konzervaci patří k našim nejspolehlivějším exponátům. Obilí padalo rovnou do pytlů a bylo tak čisté, že se nemuselo přečišťovat — mlátičkáře totiž dělal sám darovatel, pan Jan Homola st.</p>' +
+      '<p>Třetí ukázkou bylo řezání dřeva na cirkulárce Kovařík, vyrobené ještě před rokem 1920, kdy se firma spojila do pozdější světoznámé Wichterle & Kovařík. Cirkulárka má celodřevěný rám a pojízdný stůl s krytem kotouče, který se pomocí závaží sám vrací a kotouč zakrývá. Motor Slavia 8 se tentokrát nepodařilo nastartovat, a tak jsme ho operativně nahradili traktorem Svoboda 12 — Martin Ptáček přesně najel k řemenici a řemen jsme nasadili za chodu. Pilu obsluhoval Jan Homola st.</p>' +
+      '<p>Po celé odpoledne běželo na ploše sedm stabilních motorů a čtyři naše traktory, předváděli jsme také hrabicovku a obracák. Do setmění bylo vše naloženo a uloženo doma.</p>' +
+      '<p class="tl-foto-credit">Účastníci: Josef a Petr Fickovi, Marie Ficková, Ondřej, Aleš a Dagmar Wasserbauerovi, Jiří Jakšič, Martin Ptáček, Petr Hamřík st. a ml., Jan Homola st., Jiří Homola; s nakládkou pomohli Radek, Mirek a Jan ml. Homolovi a Petr Tulis. Foto a video: Pavel Juráček</p>'
+  },
+  {
+    rok: "2023", nazev: "Zpátky v čase", datum: "2. 9. 2023", misto: "Nové Dvory",
+    fotky: [],
+    videa: [],
+    popis: '<p>Pěknou sobotu připravili novodvorští hasiči. Některé členky sboru ušily všem pořadatelům dobové oblečení — mužům volné košile a kalhoty, sobě halenky a pestré široké sukně. Program moderoval jeho autor, pan Jiří Sáblík.</p>' +
+      '<h4>Ukázky</h4>' +
+      '<p>Odpoledne začalo odstřeďováním mléka a stloukáním másla, které se pak mazalo na doma pečený chléb pro přihlížející. Mléko „dodávala“ maketa krávy vyrobená pořadateli. Následovalo mlácení cepy v podání dvou zaučených členek a poté naše ukázky: mlácení na mlátičce Ježek poháněné motorem Pluto, výroba povřísel a šrotování vymláceného obilí na kamenném šrotovníku s motorem Klíma.</p>' +
+      '<p>Na závěr předvedl 83letý zasloužilý hasič Josef Sobotka výrobu jutových provazů na jednoduchém, ale důmyslném zařízení ze dvou stojanů s kolíky a klikou. Stihl nám také opravit zapůjčené kosisko a kolo našeho žebřiňáku. Akce byla obdivuhodně připravená, přálo počasí i účast a večer pokračovala zábava.</p>'
+  },
+  {
+    rok: "2023", nazev: "Hranice bez hranic aneb Plnou parou starou károu", datum: "24. 6. 2023", misto: "Hranice na Moravě",
+    fotky: [],
+    videa: [],
+    popis: '<p>Na pozvání organizátora pana Jaroslava Nitky jsme se vydali na více než 200 km dlouhou cestu, převážně po dálnici. Auta s přívěsy bezpečně zvládli naši řidiči Josef Ficek a Ondřej Wasserbauer.</p>' +
+      '<p>Slavnosti se odehrávaly na celém velkém náměstí. Ve 13 hodin vyšel průvod s bubeníkem, mažoretkami, umělci v dobovém oblečení, naleštěnými veterány s dámami a pány v kostýmech a zástupci spolků — divadelníky, hasiči, sokoly, řemeslníky i vojáky a četníky na kolech. Během průvodu jsme pouštěli parní píšťalu.</p>' +
+      '<p>Stáli jsme v samém středu náměstí naproti kostelu. Předváděli jsme lokomobilu při řezání dřeva, výrobu povřísel a u vchodu stabilní motor Lorenz. Výrobou provazů nás doplnil pan Jiří Danihel z Újezda se synovci Fialovými z Nového Veselí.</p>' +
+      '<p class="tl-foto-credit">Účastníci: Ondřej a Verunka Wasserbauerovi, Dagmar Wasserbauerová, Josef a Marie Fickovi, Jan Janeček, Karel Vykydal</p>'
+  },
+  {
+    rok: "2022", nazev: "Den venkova — 5. ročník", datum: "24. 9. 2022", misto: "Zámek Žďár nad Sázavou",
+    fotky: [],
+    videa: [],
+    popis: '<p>Poslední větší akcí roku byly „Ukázky historické zemědělské techniky“. Program dne lákal na naši unikátní lokomobilu, kterou návštěvníci viděli v plné síle při řezání dřeva na cirkulárce.</p>' +
+      '<p>V chodu jsme dále předváděli traktory Svoboda 12 a 15, stabilní motory Klíma, Benz a Lorenz, krabicovou sekačku a obracák. Sousedili jsme s firmou předvádějící moderní linku lesní techniky na kácení, odvětvování a nakládání dřeva. Občerstvení v našem stanu jako vždy připravily Marie Ficková s dcerou Dášou Wasserbauerovou.</p>'
+  },
+  {
+    rok: "2022", nazev: "Den otevřených dveří ve Vonwillerově továrně", datum: "17. 9. 2022", misto: "Žamberk",
+    fotky: [],
+    videa: [],
+    popis: '<p>Přivezli jsme lokomobilu Peerless s cirkulárkou Kovařík a povříslovačku s motorem Benz. Hlavním bodem programu bylo slavnostní otevření nového parkoviště před továrnou pro 60 vozů za účasti sponzorů, zástupců města a kraje.</p>' +
+      '<p>Jako vždy se předváděly parní lokomobily, parní válce, lokomotivy, automobily, motocykly a kola. Lokomotivy na malém okruhu celý den vozily zájemce, hlavně děti. Na novém parkovišti se představila řada automobilových a motocyklových veteránů ze soukromých sbírek i muzeí.</p>'
+  },
+  {
     rok: "2022", nazev: "Národní výstava — Den českého strakatého skotu", datum: "8. 9. 2022", misto: "Radešínská Svratka",
     fotky: ["pjf-3362mal.jpg","pjf-3367mal.jpg","pjf-3359mal.jpg","pjf-3371mal.jpg","pjf-3361mal.jpg","pjf-3365mal.jpg","pjf-3374mal.jpg","pjf-3373mal.jpg","pjf-3376mal.jpg","pjf-3380mal.jpg","pjf-3378mal.jpg","pjf-3370mal.jpg","pjf-3381mal.jpg","pjf-3382mal.jpg","pjf-3384mal.jpg","pjf-3385mal.jpg","pjf-3389mal.jpg","pjf-3386mal.jpg","pjf-3391mal.jpg","pjf-3393mal.jpg","pjf-3394mal.jpg","pjf-3392mal.jpg","pjf-3395mal.jpg","pjf-3396mal.jpg","pjf-3398mal.jpg","pjf-3397mal.jpg","pjf-3400mal.jpg","pjf-3401mal.jpg","pjf-3405mal.jpg","pjf-3406mal.jpg","pjf-3404mal.jpg","pjf-3411mal.jpg","pjf-3409mal.jpg","pjf-3412mal.jpg","pjf-3408mal.jpg","pjf-3414mal.jpg","pjf-3419mal.jpg","pjf-3416mal.jpg","pjf-3420mal.jpg","pjf-3425mal.jpg","pjf-3422mal.jpg","pjf-3426mal.jpg","pjf-3428mal.jpg","pjf-3429mal.jpg","pjf-3430mal.jpg","pjf-3431mal.jpg","pjf-3433mal.jpg","pjf-3435mal.jpg","pjf-3437mal.jpg","pjf-3439mal.jpg","pjf-3443mal.jpg"],
-    videa: []
+    videa: [],
+    popis: '<p>Na národní výstavu jezdíme na pozvání pořadatelů tradičně, dosud vždy po dvou letech — tentokrát kvůli covidu po čtyřech. Opět jsme dostali velký prostor pro naše exponáty, kterým vévodila lokomobila Peerless pohánějící cirkulárku Kovařík.</p>' +
+      '<h4>Vystavená technika</h4>' +
+      '<ul><li>Traktory Svoboda 12, Svoboda 15 a Zetor 3545</li><li>Stabilní motory Lorenz 5 HP, Benz 3, Klíma 4–5, Slavia 8 a Pluto 5</li><li>Povříslovačka, moržovák (vylušťovač kukuřice) a krabicová sekačka</li></ul>' +
+      '<p>Expozici podpořil i pan R. Křesťan se Zetorem 25 A. K přepravě jsme využili návěs pana Krupičky, firemní Avii a Jumper s přívěsem. Naše ženy připravovaly jídlo pro nás i pro známé a zákazníky firmy Fimas, kteří se u našeho stanu zastavili.</p>' +
+      '<p class="tl-foto-credit">Účastníci: Jiří Jakšič, Jan Homola, Petr Hamřík st., Jan Janeček, Josef Ficek, Ondřej a Aleš Wasserbauerovi, Marta Veselá, Dagmar Wasserbauerová, Marie Ficková; s nakládkou pomohli Martin Ptáček a Petr Ficek. Fotodokumentace: Pavel Juráček</p>'
+  },
+  {
+    rok: "2022", nazev: "Výstava svazu chovatelů drobného zvířectva", datum: "27.–28. 8. 2022", misto: "Slatinice u Vysokého Mýta",
+    fotky: [],
+    videa: [],
+    popis: '<p>Při celostátní výstavě chovatelů zve veteránista pan Kajslík své známé jako doprovodný program. Po několikerém pozvání jsme letos přijeli se dvěma benzinovými stabilními motory — Benz a Lorenz.</p>'
+  },
+  {
+    rok: "2022", nazev: "Dědečkova výstava stabilních motorů, traktorů a historických strojů", datum: "16. 7. 2022", misto: "Doubravice u Pardubic",
+    fotky: [],
+    videa: [],
+    popis: '<p>Sedmý ročník setkání pořádal pan Tomáš Doležal, široce známý mezi milovníky veteránů. Přivezli jsme traktor Svoboda 12 a motory Benz a Lorenz. Sešlo se velké množství stabilních motorů z celé republiky, na dvě desítky traktorů Svoboda a desítky Zetorů i jiných značek. Seznámili jsme se se zajímavými odborníky na historickou techniku, mimo jiné s Janem Pichlíkem z Brna a bratry Filovými z Chlumu – Brancouz. Výstava trvala od 10 do 16 hodin a zakončila ji jízda obcí.</p>'
+  },
+  {
+    rok: "2022", nazev: "Den pro děti", datum: "18. 6. 2022", misto: "Řečice",
+    fotky: [],
+    videa: [],
+    popis: '<p>Krásná sobota v areálu koupaliště zakončila školní rok. Pořadatelé připravili ukázky z myslivosti — živé i vycpané exponáty, lovecké psy a dravce — a návštěvníkům přiblížili i historickou a současnou zemědělskou techniku.</p>' +
+      '<p>V chodu jsme předváděli traktor Svoboda 12, stabilní motory Klíma, Benz a Slavia 8, fukárek, fukar Ježek, cirkulárku a povříslovačku.</p>'
+  },
+  {
+    rok: "2021", nazev: "Renovace traktoru Zetor 3545", datum: "březen – srpen 2021", misto: "Nové Veselí",
+    fotky: [],
+    videa: [],
+    popis: '<p>Od března 2021 opravovali traktor Zetor 3545 Petr Hamřík st. se synem Petrem ve své domácí dílně. Renovace do původního stavu včetně lakování si vyžádala stovky pracovních hodin. Traktor je v původních barvách a připravený na registraci, do muzea se vrátil 23. 8. 2021.</p>' +
+      '<p>Jejich perfektní a svědomitá práce výrazně zvýšila historickou hodnotu tohoto málo dostupného stroje, kterého se vyrobilo jen malé množství. Děkujeme!</p>'
+  },
+  {
+    rok: "2020", nazev: "Vývoz zvonu na Vejdoch", datum: "20. 9. 2020", misto: "Vejdoch nad obcí Jámy",
+    fotky: [],
+    videa: [],
+    popis: '<p>Na žádost novoveselského faráře monsignora Jana Peňáze jsme zajistili vývoz nového zvonu na kopec Vejdoch (663 m) nad obcí Jámy, odkud je vidět do všech stran i na Nové Veselí. Pan farář má k tomuto místu vztah od mládí a se starostou Jam inicioval vznik tzv. Stromu života ve tvaru kříže.</p>' +
+      '<p>Vývoz měl být důstojný, a proto se jelo koňmo. Pan Jaroslav Morkus přijel s koňmi, ozdobený valník se zvonem mezi dvěma břízkami připravila moje manželka Marie s manželi Evou a Mílou Sobotkovými. Průvod došel až ke kříži na vrcholu, kde po projevech církevních zástupců a starosty proběhlo symbolické poklepání na zvon.</p>' +
+      '<p>Zvon byl odlit 7. 8. 2020 v polské Přemyšli, 7. 9. přivezen do Nového Veselí, 20. 9. vyvezen na Vejdoch, 27. 9. o pouti posvěcen a 25. 10. 2020 zavěšen na věž kostela.</p>'
   },
   {
     rok: "2020", nazev: "Dožínkové slavnosti — Barevné PoVeselení", datum: "30. 8. 2020", misto: "Nové Veselí",
     fotky: ["published/josef-ficek-lokomobila1024-1.jpg","published/img-6897-1.jpg","fb-img-15976010718666047_orig.jpg"],
-    videa: []
+    videa: [],
+    popis: '<p>Po třech letech se v Novém Veselí znovu konaly dožínky spojené s Barevným poveselením, opět pod taktovkou hasičského sboru. Po krátké přeháňce vyšel průvod z areálu místního ZDV, prošel Dolní ulicí, přes náměstí kolem kostela a školy a vrátil se do hasičského areálu. Nechyběli vlajkonoši, krojovaná chasa a rodiny, velký kruh malých hasičů s věncem na stužkách, zástupci obce, družstva a pan farář. Hrála dechová hudba pod vedením pana Petra Vencelidese, kočár pana Morkuse vezl krojované tanečnice a druhý koňský pár táhl náš žebřinový vůz se snopy. Za kapelou jely historické traktory včetně naší Svobody 12 a Zetoru 25 K.</p>' +
+      '<h4>Lokomobila poprvé v Novém Veselí</h4>' +
+      '<p>Program jsme zahájili my. Mlátičku Ježek 22 poprvé v Novém Veselí poháněla parní lokomobila Peerless — a vrátili jsme se tak v čase do druhé poloviny 19. století. Následovala výroba povřísel, o kterou byl velký zájem. Po celé odpoledne běžely naše stabilní motory a vystaveny byly historické stroje a nářadí, každý exponát s tabulkou, fotografií a popisem.</p>' +
+      '<p>Program pokračoval připomenutím výročí založení SDH, svěcením nového vozidla sboru, útokem mladých hasičů a ukázkou staré ruční stříkačky. Počasí vydrželo — krátká bouřka přišla, až když jsme uklidili poslední stroj.</p>' +
+      '<p class="tl-foto-credit">Účastníci: Jarda a Vojta Kratochvílovi, Jan Homola, Jan Janeček, Marta Veselá, Petr Hamřík st. a ml., Karel Vykydal, Aleš, Ondra a Dáša Wasserbauerovi, Josef a Marie Fickovi</p>'
   },
   {
     rok: "2020", nazev: "Výstava historické techniky", datum: "26. 7. 2020", misto: "Velká Losenice",
     fotky: ["pjf2417_1.jpg","pjf2418_1.jpg","pjf2419_1.jpg","pjf2420_1.jpg","pjf2427_1.jpg","pjf2428_1.jpg","pjf2431_1.jpg","pjf2433_1.jpg","pjf2435_1.jpg","pjf2436_1.jpg","pjf2444_1.jpg","pjf2445_1.jpg","pjf2448_1.jpg","pjf2449_1.jpg","pjf2451_1.jpg","pjf2452_1.jpg","pjf2454_1.jpg","pjf2456_1.jpg","pjf2458_1.jpg","pjf2462_1.jpg","pjf2467_1.jpg","pjf2469_1.jpg","pjf2472_1.jpg","pjf2473_1.jpg","pjf2474_1.jpg","pjf2476_1.jpg","pjf2478_1.jpg","pjf2480_1.jpg","pjf2481_1.jpg","pjf2482_1.jpg","pjf2483_1.jpg","pjf2484_1.jpg","pjf2486_1.jpg","pjf2487_1.jpg","pjf2489_1.jpg","pjf2491_1.jpg","pjf2493_1.jpg","pjf2494_1.jpg","pjf2496_1.jpg","pjf2497_1.jpg","pjf2499_1.jpg","pjf2501_1.jpg","pjf2507_1.jpg","pjf2508_1.jpg","pjf2510_1.jpg","pjf2512_1.jpg","pjf2522_1.jpg","pjf2523_1.jpg","pjf2526_1.jpg","pjf2527_1.jpg","pjf2530_1.jpg"],
-    videa: []
+    videa: [],
+    popis: '<p>Výstavu jsme uspořádali na přání pana Jana Součka, stavitele, který končil s podnikáním a chtěl se takto rozloučit se svým řemeslem. Den předem dojel Ondra Wasserbauer na traktoru Svoboda 12 po vlastní ose z Nového Veselí — 14 km za hodinu.</p>' +
+      '<p>Konalo se to o pouti, takže jsme přes plot sousedili s lunaparkem a o hudbu ani návštěvníky nebyla nouze. Celý teplý den přálo počasí, až na krátkou spršku.</p>' +
+      '<h4>Vystavená technika</h4>' +
+      '<ul><li>Lokomobila Peerless s cirkulárkou</li><li>Mlátička Slavia 22 s lisem, povříslovačka a moržovák</li><li>Stabilní motory Lorenz 5, Slavia 4, Slavia 8, Klíma 4–5 a Benz 3</li><li>Hrabicovka, vyorávač brambor a zemědělské nářadí</li></ul>' +
+      '<p>Podpořil nás i pan R. Křesťan se Zetorem 25 A a dalšími dvěma traktory. Firma pana Součka zajistila dopravu strojů tam i zpět, dopolední občerstvení připravila Marie Ficková a odpolední pan Souček.</p>' +
+      '<p class="tl-foto-credit">Účastníci: Jan Janeček, Jiří Jakšič, Josef Juráček, Dagmar, Ondřej a Aleš Wasserbauerovi, Marie a Josef Fickovi, Jaroslav a Vojta Kratochvílovi, Tomáš Holcman. Foto: Pavel Juráček</p>'
+  },
+  {
+    rok: "2019", nazev: "Den otevřených dveří ve Vonwillerově továrně", datum: "14. 9. 2019", misto: "Žamberk",
+    fotky: [],
+    videa: [],
+    popis: '<p>Na podzimní den otevřených dveří jsme poprvé veřejně představili zrenovovanou lokomobilu Peerless, po zkušebním provozu v předchozím týdnu. Jela na velkém přívěsu za firemním Jumperem, druhé auto vezlo posádku a cirkulárku.</p>' +
+      '<p>Dostali jsme nejlepší místo u vstupu, takže kolem nás prošli téměř všichni návštěvníci. Zaujala je výroba povřísel i řezání dřeva na cirkulárce poháněné lokomobilou. Obdiv sklidila lokomobila hlavně u pořadatelů, bratrů Bednářových, a jejich zaměstnanců, kteří ji znali ještě před renovací: ocenili úpravu přední nápravy, nově odlitá bronzová dvířka komínové komory s letopočtem 1874 i barevné sladění se zlatým linkováním.</p>' +
+      '<p>Kouř ze sousední lokomobily nám vítr foukal přímo na stánek. Topič, který do ní přikládal piliny, se jmenoval Karel — dnes je to náš příznivec a kamarád Karel Vykydal.</p>' +
+      '<p class="tl-foto-credit">Účastníci: Jan Homola, Jan Janeček, Marta Veselá, Josef Juráček, Josef Ficek, Marie Ficková (foto a občerstvení)</p>'
+  },
+  {
+    rok: "2019", nazev: "III. výstava stabilních motorů a staré techniky", datum: "26. 6. 2019", misto: "Ločenice",
+    fotky: [],
+    videa: [],
+    popis: '<p>Výstava se konala na návsi v Ločenicích v jižních Čechách, nedaleko Římovské přehrady. Připravil a řídil ji pan Janeš, odborník na diesely, za podpory starosty obce. Místní hasiči nám pomohli se skládáním a nakládáním a dodali vodu do motorů.</p>' +
+      '<p>Vystavovatelů i exponátů bylo hodně. My jsme předváděli výrobu povřísel a řezání dřeva — přivezli jsme motory Benz, Slavia 8 a Klíma 4–5, cirkulárku, povříslovačku a kvíz Dary země na stojanech. Vydařená a zajímavá akce!</p>' +
+      '<p class="tl-foto-credit">Účastníci: Jan Homola, Jan Janeček, Marta Veselá, Marie Ficková, Josef Ficek</p>'
+  },
+  {
+    rok: "2019", nazev: "Výročí zemědělského družstva", datum: "21. 6. 2019", misto: "Ostrov nad Oslavou",
+    fotky: [],
+    videa: [],
+    popis: '<p>Na žádost tehdejšího mechanizátora Ing. Ladislava Chrásta jsme na oslavě výročí družstva předváděli výrobu povřísel a stabilní motory v chodu: Slavia 8, Slavia 4, Benz, povříslovačku a moržovák. Přišly i celé školní třídy. Družstvo vystavovalo také své stroje a pan mechanizátor nás provedl celým areálem.</p>' +
+      '<p class="tl-foto-credit">Účastníci: Jan Janeček, Josef Juráček, Marie Ficková, Josef Ficek</p>'
+  },
+  {
+    rok: "2018", nazev: "Renovace parní lokomobily Peerless", datum: "říjen 2018 – září 2019", misto: "Nové Veselí",
+    fotky: [],
+    videa: [],
+    popis: '<p>Dne 20. 10. 2018 jsme ze Žamberka přivezli parní lokomobilu Peerless o hmotnosti 1750 kg (bez vody a roštů). Josef Ficek a Jan Janeček ji rozebrali na jednotlivé celky a Martin Pejchal ji 7. 11. opískoval. Následoval základní nátěr a oprava kol včetně výměny části špic a loukotí, na které se podílel pan Rosecký z Velké Losenice.</p>' +
+      '<p>V lednu 2019 se natírala opravená loukoťová kola — fermež, základ a dvakrát vrchní červená Alkyton RAL 3000. Jan Janeček pak celý týden pracoval na zinkování a dokončení povrchových úprav, v únoru se dokončily nátěry a vyčistil se parní stroj. V týdnu 9.–13. 9. 2019 proběhl zkušební provoz a 14. 9. 2019 se lokomobila poprvé představila veřejnosti v Žamberku.</p>'
   },
   {
     rok: "2018", nazev: "Den Venkova", datum: "29. 9. 2018", misto: "Zámek Žďár nad Sázavou",
     fotky: [],
-    videa: []
+    videa: [],
+    popis: '<p>Na druhém Dni venkova jsme byli umístěni v zámecké zahradě mezi ovocnými stromy, na dostatečně velké ploše. Návštěvníci ve velkém počtu sledovali výrobu povřísel, vylušťování kukuřice i krabicovou sekačku při práci. Velký zájem byl i o kvíz a svazky obilovin a dalších polních plodin, přehledně umístěné na tablech.</p>' +
+      '<p>Vystavili jsme motory Benz 3, Slavia 2, Slavia 4 a Slavia 8 HP, povříslovačku, hrabicovku, fofr (čističku obilí), moržovák, trakař a pluh.</p>' +
+      '<p class="tl-foto-credit">Účastníci: Dáša, Aleš a Ondra Wasserbauerovi, Jarda a Vojta Kratochvílovi, Tomáš Holcman, Josef a Marie Fickovi (foto a občerstvení)</p>'
   },
   {
     rok: "2018", nazev: "Národní výstava", datum: "13. 9. 2018", misto: "Radešínská Svratka",
     fotky: [],
-    videa: []
+    videa: [],
+    popis: '<p>Pořadatelé nás znovu pozvali na národní výstavu českého strakatého skotu. Zatímco předloni jsme mlátili na klasické mlátičce s elektromotorem, letos už jsme měli v chodu cepovku. Poháněl ji opravený dieselový stabilní motor Slavia 8 HP na podvozku a výmlat žita jsme předvedli třikrát během dne.</p>' +
+      '<p>Dále jsme předváděli výrobu povřísel, vylušťování kukuřice v moržováku a hrabicovou sekačku poháněnou elektromotorem. V chodu byly i motory Slavia 4, Slavia 2, Klíma 4–5 a Lorenz 4–5, vystaven byl kultivátor, pluh, ruční pohrabovač, trakař a kvíz Dary země. Exponáty jsme přepravili vozidly firmy Fimas a návěsem pana Krupičky.</p>' +
+      '<p class="tl-foto-credit">Účastníci: Dagmar, Aleš a Anežka Wasserbauerovi, Jiří Jakšič, Jan Homola, Josef a Pavel Juráčkovi, Jan Janeček, Josef a Petr Fickovi, Marie Ficková (občerstvení a foto)</p>'
+  },
+  {
+    rok: "2018", nazev: "Mezinárodní sraz mistrů kolářských, kočárnických a mistrů opratí", datum: "21.–22. 7. 2018", misto: "Čechy pod Kosířem",
+    fotky: [],
+    videa: [],
+    popis: '<p>Na sraz nás pozval pan Václav Obr, majitel krásného Muzea kočárů. Přijeli jsme už v pátek, abychom si zajistili dobré místo. Přivezli jsme povříslovačku s příslušenstvím, motory Benz a Slavia 4, tabla a kvíz. Ve stanu nocovali a zároveň hlídali Jarda a Vojta Kratochvílovi s Ondřejem Wasserbauerem.</p>' +
+      '<p>První den začal velkolepým průvodem krojovaných účastníků za doprovodu hudby, kterého jsme se v krojích zúčastnili i my. Následovaly ukázky kočárů, bryček a potahů tažených krásnými koňmi. Po setmění začala velká noční show osvětlená jen loučemi a povoznickými svítilnami, trvala až do 23 hodin. Kolem areálu předváděli svou práci kováři, koláři, tesaři, mlynáři i bednáři. Vydařená akce — spokojení diváci i pořadatel.</p>'
   },
   {
     rok: "2017", nazev: "Den Venkova", datum: "28. 10. 2017", misto: "Zámek Žďár nad Sázavou",
     fotky: [],
-    videa: []
+    videa: [],
+    popis: '<p>Na pozvání organizátorů jsme se s částí exponátů zúčastnili Dne venkova v areálu zámku. Dostali jsme pozemek nad tribunou pro muzikanty, hned vedle rožně s vepřovým — trochu na nás kouřilo, ale mělo to i své výhody.</p>' +
+      '<p>V chodu jsme předváděli hrabicovku, povříslovačku poháněnou motorem Benz, motor Slavia 4 HP, vyorávač brambor, trakař a dvojradličný pluh. O stroje byl velký zájem. Fotografie pořídila Marie Ficková — včetně snímku s panem hrabětem a paní hraběnkou.</p>' +
+      '<p>Sezónu 2017 jsme zakončili přátelským posezením členů a rodin v restauraci Na Louce, kde jsme poděkovali všem za práci na strojích i na výstavách.</p>' +
+      '<p class="tl-foto-credit">Účastníci: Marie a Josef Fickovi, Jan Homola, Jan Janeček, Vasil, Jarda, Katka, Barunka a Vojta Kratochvílovi, Dáša, Aleš, Danuška a Ondra Wasserbauerovi</p>'
   },
   {
     rok: "2017", nazev: "Výstava při Cimbálovce", datum: "26. 8. 2017", misto: "Šlakhamr",
