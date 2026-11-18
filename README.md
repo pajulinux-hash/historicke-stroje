@@ -8,6 +8,9 @@ Web prezentující sbírku historické zemědělské techniky firmy Fimas s.r.o.
 
 - `index.html` — kompletní web (HTML + CSS + JS v jednom souboru)
 - `PJF_5591male.webp` — fotka zakladatele
+- `fotky/vystavy/` — fotky z výstav převzaté ze starého webu (Weebly), náhledy v `fotky/vystavy/t/`
+- `fotky/w/` — ostatní fotky a logo převzaté ze starého webu
+- `fotky/` — sem nahrávejte nové fotky
 - `vercel.json` — konfigurace pro Vercel hosting
 
 ## Úprava obsahu
